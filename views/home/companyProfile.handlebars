@@ -25,18 +25,18 @@
 <div class="ui grid">
     <div style=" margin-left: 80px;" class="two column row meddle-conts">
         <div  class="column">
-            <form action="/companyProfile" method="POST">
-            <a href="/post/{{id}}">
+            <form action="/News" method="POST">
+            <a href="/News/{{id}}">
             <div class="ui card">
             <div class="image">
-                <img id="layer_10_0" src="../assets/img/layer_10_0.png">
+                <img style="width: 400px; height: auto;" id="layer_10_0" src="./uploads/{{file}}">
             </div>
             <div class="content">
                 <div class="meta">
                     <span class="date">新闻 {{generateTime date 'YYYY年 MM月 D日'}}</span>
                 </div>
                 <div class="description dec">
-                    派客动力携手合作伙伴和开发者在 开源盛会上释放开源的价值
+                    {{title}}
                 </div>
             </div>
         </div>

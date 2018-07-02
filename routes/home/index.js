@@ -54,16 +54,12 @@ router.get('/companyProfile', (req,res)=>{
          Post.count().then(postCount=>{
              Category.find({}).then(categories=>{
 
-               
-
-                
-                 res.render('home/companyProfile', {
-                     posts: posts, 
-                     leatest: categories,
-                     leatest: leatest,
-                     current: parseInt(page),
-                     pages: Math.ceil(postCount / perPage)
-                });
+                 res.render("home/companyProfile", {
+                   posts: posts,
+                   categories: categories,
+                   current: parseInt(page),
+                   pages: Math.ceil(postCount / perPage)
+                 });
          });
      });
 
