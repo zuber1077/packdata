@@ -10,6 +10,7 @@ const upload = require('express-fileupload');
 const session = require('express-session');
 const flush = require('connect-flash');
 const passport = require('passport');
+const Fadmin = require("firebase-admin");
 
 // import environmental variables from our variables.env file
 require('dotenv').config({ path: 'variables.env' });

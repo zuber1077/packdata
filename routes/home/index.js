@@ -53,14 +53,19 @@ router.get('/companyProfile', (req,res)=>{
 
          Post.count().then(postCount=>{
              Category.find({}).then(categories=>{
+
+               
+
+                
                  res.render('home/companyProfile', {
                      posts: posts, 
-                     categories: categories,
+                     leatest: categories,
+                     leatest: leatest,
                      current: parseInt(page),
                      pages: Math.ceil(postCount / perPage)
                 });
-            });
          });
+     });
 
     }).catch(error=>console.log(error));
 
