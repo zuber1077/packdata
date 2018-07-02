@@ -5,6 +5,7 @@ const handlebars = require('express-handlebars');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
+const promisify = require('es6-promisify');
 const upload = require('express-fileupload');
 const session = require('express-session');
 const flush = require('connect-flash');
@@ -15,14 +16,11 @@ require('dotenv').config({ path: 'variables.env' });
 
 // Connect to our Database and handle any bad connections
 
+// Connect to our Database and handle any bad connections
+
 mongoose.connect(process.env.DATABASE).then(db=>{
     console.log('DB connected');
-}).catch(error=>console.log(`🙅 🚫 🙅 🚫 🙅 🚫 🙅 🚫 → ${error}`));
-
-
-// mongoose.connect(mongoDbUri).then(db=>{
-//     console.log('DB connected');
-// }).catch(error=>console.log(`err ${error}`));
+}).catch(error=>console.log(`err ${error}`));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
