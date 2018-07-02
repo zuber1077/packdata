@@ -14,12 +14,10 @@ const passport = require('passport');
 require('dotenv').config({ path: 'variables.env' });
 
 // Connect to our Database and handle any bad connections
-mongoose.connect(process.env.DATABASE);
-mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
-mongoose.connection.on('error', (err) => {
-  console.log("DB connected");
-  console.error(`🙅 🚫 🙅 🚫 🙅 🚫 🙅 🚫 → ${err.message}`);
-});
+
+mongoose.connect(process.env.DATABASE).then(db=>{
+    console.log('DB connected');
+}).catch(error=>console.log(`🙅 🚫 🙅 🚫 🙅 🚫 🙅 🚫 → ${error}`));
 
 
 // mongoose.connect(mongoDbUri).then(db=>{

@@ -1,5 +1,5 @@
 {
-  "name": "pack data",
+  "name": "packData",
   "version": "1.0.1",
   "description": "Cms Blog WebApp using NodeJs and mongodb ",
   "main": "app.js",
