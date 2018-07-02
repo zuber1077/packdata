@@ -1,0 +1,113 @@
+
+
+<div class="container meddle-cont container2 ">
+    <div class="ui basic  segment">
+
+        <h4 style="font-size: 36px;" class="ui center comp header">公司简介</h4>
+        <p> &nbsp;&nbsp;&nbsp; 北京派客动力科技有限公司（以下简称云图数据）创立于2014年， 是北京海量数据技术股份有 限公司的子公司，主要业务是针对企业数据 中心的需求，自主研发和销售数据治理领域的产品。公司 总部位于北京，在广州和武汉分别设有研发中心。
+            <br>
+            <br>&nbsp;&nbsp;&nbsp; 随着 IT 行业的发展，社会的信息化程度越来越高，数据本身的价值也越来越高。 凭借多年在银 行、保险、政府、电信、证券等行业的数据治理经验， 云图数据为各行业单位日渐庞大和复杂的信息
+            化系统，提供完整的国产自主研发的综合数据治理产品方案， 涉及的领域包括了信息安全、历史数据、 数据质量、主数据管理、实时数据采集与数据分析等通过使用大数据平台技术，整合软硬件为一体化 的设备，在产品交付过程中为用户提供应用层、中间层和基础架构的端到端支持，大大简化系统架构、
+            降低实施和运维成本。
+            <br>
+            <br>&nbsp;&nbsp;&nbsp; 派客动力数据始终坚持“让数据增值”的理念，以“创新、严谨、自强”的精神投入到产品研发当中， 开创国产的数据治理道路。
+        </p>
+        <div id="layer_15_0">
+            <img src="/assets/img/layer_92.png">
+        </div>
+        <h2 style="margin-left: 175px; font-size: 36px;" class="ui center comp header">公司简介</h2>
+    </div>
+</div>
+<!-- <img id="layer_10_0" src="assets/img/layer_10_0.png"> -->
+
+<br>
+<br>
+
+
+
+<div class="container ">
+    <div class="ui grid">
+        <div style=" margin-left: 80px;" class="two column row meddle-conts">
+            <div class="column">
+                <form action="/News/{{id}}" method="POST">
+                    <a href="/News/{{id}}">
+                        <div class="ui card">
+                            <div class="image">
+                                <img id="layer_10_0" src="/uploads/{{post.file}}">
+                            </div>
+                            <div class="content">
+                                <div class="meta">
+                                    <span class="date">新闻 {{generateTime date 'YYYY年 MM月 D日'}}</span>
+                                </div>
+                                <div class="description dec">
+                                    {{post.title}}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </form>
+
+
+            </div>
+            <button style="margin-left: 400px; margin-top: 40px;" class="button news">查看更多</button>
+        </div>
+        <div id="layer_20180627_2" class="card news2">
+            <div class="content">
+                {{!--
+                <div class="header h1s">sdfg</div> --}}
+                <a href="/News/{{id}}" class="atag">
+
+                </a>
+            </div>
+    {{!-- 2018年06月27日 --}}
+            <frameset cols="50%,50%">
+                <frame src="/companyProfile2/{{id}}" id="frame1" name="frame1">
+            {{#each posts}}
+            <form action="/companyProfile2" target="frame1" method="POST">
+                <div class="content pad">
+                    <div class="header h1s">新闻 {{generateTime date 'YYYY年 MM月 D日'}}</div>
+                    <a href="/companyProfile2/{{id}}" target="frame1" class="atag">
+                        {{title}}
+                    </a>
+                </div>
+            </form>
+            {{/each}}
+        </div>
+    </div>
+
+    <div id="layer_15_0">
+        <img src="/assets/img/layer_92.png">
+    </div>
+    <h2 style="margin-left: 50px; font-size: 36px;" class="ui center comp header">荣誉、资质</h2>
+    <div class="ui  horizontal list">
+        <div class="item">
+            <div class="spacer"> ⦁ 国家高新技术企业 </div>
+            <div class="spacer"> ⦁ 国家高新技术企业 </div>
+            <div class="spacer"> ⦁ 国家高新技术企业 </div>
+            <div class="spacer"> ⦁ 国家高新技术企业 </div>
+        </div>
+        <div class="item">
+            <div class="spacer"> ⦁ 国家高新技术企业 </div>
+            <div class="spacer"> ⦁ 国家高新技术企业 </div>
+            <div class="spacer"> ⦁ 企业信用等级AAA级证书 </div>
+            <div class="spacer"> ⦁ 企业信用等级AAA级证书 </div>
+        </div>
+        <div class="item">
+            <div class="spacer"> ⦁ 国家高新技术企业 </div>
+            <div class="spacer"> ⦁ 国家高新技术企业 </div>
+            <div class="spacer"> ⦁ 企业信用等级AAA级证书 </div>
+            <div class="spacer"> ⦁ 企业信用等级AAA级证书 </div>
+        </div>
+        <div class="item">
+            <div class="spacer"> ⦁ 国家高新技术企业 </div>
+            <div class="spacer"> ⦁ 国家高新技术企业 </div>
+            <div class="spacer"> ⦁ 国家高新技术企业 </div>
+            <div class="spacer"> ⦁ 国家高新技术企业 </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+</div>
+<!-- container  -->

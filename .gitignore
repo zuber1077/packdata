@@ -1,0 +1,9 @@
+node_modules/
+variables.env
+.idea
+*.log
+DS_store
+README.md
+semantic
+semantic.json
+public/semantic

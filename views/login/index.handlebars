@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/blog-home.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+<div class="container">
+<div class="card card-login mx-auto mt-5">
+    <div class="card-header">Login</div>
+
+    <div class="card-body">
+        <form action="/login/login" method="post">
+            {{#if error}}
+            <div class="alert alert-danger">
+                {{error}}
+            </div>
+            {{/if}}
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input name="email" class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input name="password" class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Remember Password</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+    </div>
+</div>
+</div>
+
+<style>
+    .ml-auto, .mx-auto{
+        margin-left: 300px !important;
+    }
+    .mr-auto, .mx-auto{
+        margin-right: 300px !important;
+    }
+
+    .mt-5, .my-5{
+        margin-top: 6rem !important;
+    }
+</style>

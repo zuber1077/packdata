@@ -1,0 +1,46 @@
+
+    <div class="container meddle-cont">
+        <div class="ui basic segment">
+            <h4 class="ui middle header"> {{post.title}}</h4>
+            <div id="layer_8">
+                <img src="/uploads/{{post.file}}">
+            </div>
+            <p> {{post.body}}</p>
+            <h4 class="ui small header center2">主题演讲</h4>
+            <p>{{post.keynote}}</p>
+        </div>
+    </div>
+
+<br><br>
+
+
+<style>
+    #layer_8>img{
+    height: auto; 
+    width: auto; 
+    max-width: 610px; 
+    max-height: 244px;
+    }
+
+    @media only screen and (max-width: 767px){
+    #layer_8>img{
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+    }        
+    }
+</style>
+
+{{!-- .my-image { width: 100px; height: 100px; object-fit: contain; }
+
+img{ max-width:100%; object-fit: scale-down; }
+
+img { max-width:100%; } div { width:100px; }
+
+ @media screen and (orientation: portrait) { img.ri { max-width: 80%; } }
+ 
+ @media screen and (orientation: landscape) { img.ri { max-height: 80%; } } --}}
+
+ 
+  
