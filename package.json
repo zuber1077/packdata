@@ -1,5 +1,5 @@
 {
-  "name": "myblog",
+  "name": "pack data",
   "version": "1.0.1",
   "description": "Cms Blog WebApp using NodeJs and mongodb ",
   "main": "app.js",
@@ -8,12 +8,15 @@
     "node": "8.11.1",
     "npm": "5.6.0"
   },
+  "now":{
+    "dotenv": "variables.env.now"
+  },
   "scripts": {
     "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zuber1077/CmsBlog.git"
+    "url": "git+https://github.com/zuber1077/packdata.git"
   },
   "keywords": [
     "CMS",
@@ -25,9 +28,9 @@
   "author": "zuber Ab",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zuber1077/CmsBlog/issues"
+    "url": "https://github.com/zuber1077/packdata/issues"
   },
-  "homepage": "https://github.com/zuber1077/CmsBlog#readme",
+  "homepage": "https://github.com/zuber1077/packdata#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",

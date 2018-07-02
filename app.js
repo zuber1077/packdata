@@ -85,7 +85,8 @@ app.use('/login', login);
 app.use('/admin/posts', posts);
 app.use('/admin/categories', categories);
 
-const port = 8888 || process.env.PORT;
-app.listen(port, ()=>{
-    console.log(`app listen port ${port}`);
+// Start our app!
+app.set('port', process.env.PORT || 8888);
+const server = app.listen(app.get('port'), () => {
+   console.log(`Express running → PORT ${server.address().port}`);
 });
